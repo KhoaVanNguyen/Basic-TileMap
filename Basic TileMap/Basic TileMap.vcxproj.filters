@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="dsutil.cpp">
+      <Filter>Framework\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="GAudio.cpp">
+      <Filter>Framework\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="GCamera.cpp">
+      <Filter>Framework\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GTexture.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GSprite.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Winmain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="dsutil.h">
+      <Filter>Framework\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="dxutil.h">
+      <Filter>Framework\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="GAudio.h">
+      <Filter>Framework\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="GCamera.h">
+      <Filter>Framework\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GTexture.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GSprite.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Winmain">
+      <UniqueIdentifier>{3d093310-551f-4131-b5c0-0b1c4dccdef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{20984151-c3ad-4acd-afe1-b381baa206d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{5db73f10-f0eb-464e-80a4-0d1d1d6fd978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Sound">
+      <UniqueIdentifier>{9f5ffcb1-d78c-4eac-adb5-e6f701e3fc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Camera">
+      <UniqueIdentifier>{fc4dff9f-dbc7-4b6c-bc8b-a1ad1a7114d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{40c37c2a-5263-47d7-bef1-a0ced57f7275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{bb229be0-1163-4d7e-9d42-e5d63e95e403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{88202757-e97d-488a-bd98-631ddb09f314}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.jpg">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
