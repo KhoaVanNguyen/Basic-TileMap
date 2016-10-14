@@ -37,6 +37,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Winmain</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObject.h">
@@ -75,6 +78,9 @@
     <ClInclude Include="GSprite.h">
       <Filter>Framework</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Winmain">
@@ -97,6 +103,9 @@
     </Filter>
     <Filter Include="Game">
       <UniqueIdentifier>{bb229be0-1163-4d7e-9d42-e5d63e95e403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Player">
+      <UniqueIdentifier>{49665764-5d97-44e6-9f2e-4c56e78dfa89}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

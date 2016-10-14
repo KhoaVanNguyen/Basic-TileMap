@@ -24,20 +24,31 @@ GameObject::GameObject(float _x, float _y){
 
 
 void GameObject::CreateSprite() {
-	GTexture* texture = new GTexture("Resources/simon.png", 8, 3, 24);
-	sprite = new GSprite(texture, 0, 3, 100);
+	//GTexture* texture = new GTexture("Resources/1.png", 48, 10, 480);
+	GTexture* texture = new GTexture("Resources/1.png", 48, 1, 48);
+	sprite = new GSprite(texture, 100);
 }
 void GameObject::Draw() {
 		
-	if (this->sprite != NULL){
+	// Edit herer
+	/*if (this->sprite != NULL){
 		sprite->Draw(40, 50);
+	}*/
+	if (this->sprite != NULL){
+		sprite->Draw(x, y);
 	}
 }
 
 GameObject::~GameObject()
 {
 }
-
+void GameObject::ProcessInput(LPDIRECT3DDEVICE9 d3ddv, int t) {}
+void GameObject::OnKeyDown(int KeyCode) {}
+void GameObject::Update(int deltaTime)
+{
+	if (sprite != NULL)
+		sprite->Update(deltaTime);
+}
 
 //RECT GameObject::GetRect()
 //{

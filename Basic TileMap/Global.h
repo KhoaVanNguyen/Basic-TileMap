@@ -17,6 +17,13 @@
 
 //GLOBAL CONSTANT
 
+const int MAP_HEIGHT = 10;
+const int MAP_WIDTH = 48;
+
+
+const int TEXTURE_SIZE = 32;
+const int TEXTURE_COLS = 48;
+
 //view mode(used in contructor of game class)
 #define GL_RESOLUTION_640_480_24	0
 #define GL_RESOLUTION_800_600_24	1

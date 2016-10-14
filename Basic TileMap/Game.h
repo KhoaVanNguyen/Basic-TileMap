@@ -1,4 +1,4 @@
-#ifndef _GAME_H_
+﻿#ifndef _GAME_H_
 #define _GAME_H_
 #include <windows.h>
 #include <d3d9.h>
@@ -8,7 +8,7 @@
 class CGame
 {
 public:
-	CGame(int _nCmdShow);	
+	CGame(int _nCmdShow);
 
 	void InitGame();
 
@@ -26,16 +26,12 @@ protected:
 	int InitDirectX();
 
 	void InitKeyboard();
-	void InitMouse();
-	int Mouse_X();
-	int Mouse_Y();
+
 	void ProcessKeyBoard();
-	void ProcessMouse();
+
 	virtual void RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int Delta);
 	virtual void LoadResources(LPDIRECT3DDEVICE9 d3ddv);
 	virtual void ProcessInput(LPDIRECT3DDEVICE9 d3ddv, int Delta);
-	
-
 
 	virtual void OnKeyUp(int KeyCode);
 	virtual void OnKeyDown(int KeyCode);
@@ -50,9 +46,7 @@ protected:
 
 	BYTE  _KeyStates[256]; // DirectInput keyboard state buffer 
 
-	DIMOUSESTATE mouse_state;
-
-	DIDEVICEOBJECTDATA _KeyEvents[ GL_KEY_BUFFER_SIZE ]; // Buffered keyboard data
+	DIDEVICEOBJECTDATA _KeyEvents[GL_KEY_BUFFER_SIZE]; // Buffered keyboard data
 };
 
 #endif
