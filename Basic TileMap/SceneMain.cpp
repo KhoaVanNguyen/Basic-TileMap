@@ -81,8 +81,7 @@ void SceneMain::RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int t)
 			{
 			 // set tile X
 				int x = ((int)(col*TEXTURE_SIZE));
-				// if tile on screen
-				if (x > -TEXTURE_SIZE && x < G_ScreenWidth)
+			//	if (x > -TEXTURE_SIZE && x < G_ScreenWidth)
 
 					bg->sprite->DrawIndex(tileMap[row][col], x, y);
 			}
