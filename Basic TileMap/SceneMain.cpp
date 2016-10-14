@@ -55,6 +55,13 @@ void SceneMain::RenderFrame(LPDIRECT3DDEVICE9 d3ddv, int t)
 		G_BackBuffer,		// to 
 		NULL,				// which portion?
 		D3DTEXF_NONE);
+
+	G_SpriteHandler->Begin(D3DXSPRITE_ALPHABLEND);
+
+	simon->Draw();
+
+	G_SpriteHandler->End();
+	
 }
 void SceneMain::ProcessInput(LPDIRECT3DDEVICE9 d3ddv, int Delta)
 {
@@ -70,6 +77,8 @@ void SceneMain::LoadResources(LPDIRECT3DDEVICE9 d3ddv)
 	Background = CreateSurfaceFromFile(d3ddv, "Resources/background.jpg");
 
 	HRESULT res = D3DXCreateSprite(d3ddv, &G_SpriteHandler);
+
+	simon = new GameObject(20, 40);
 }
 void SceneMain::OnKeyDown(int KeyCode)
 {

@@ -98,13 +98,5 @@
     <Filter Include="Game">
       <UniqueIdentifier>{bb229be0-1163-4d7e-9d42-e5d63e95e403}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resources">
-      <UniqueIdentifier>{88202757-e97d-488a-bd98-631ddb09f314}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="background.jpg">
-      <Filter>Resources</Filter>
-    </Image>
   </ItemGroup>
 </Project>

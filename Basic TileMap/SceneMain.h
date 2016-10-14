@@ -3,14 +3,16 @@
 
 #include "Game.h"
 #include "Utils.h"
-#include "GTexture.h"
 #include "Global.h"
 #include "GUI.h"
+#include "GameObject.h"
 
 
 class SceneMain: public CGame
 {
 public: 	
+
+	GameObject *simon;
 
 	LPDIRECT3DSURFACE9 Background;
 	SceneMain(int _nCmdShow);

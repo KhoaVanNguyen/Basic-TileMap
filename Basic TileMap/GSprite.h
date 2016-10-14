@@ -1,5 +1,5 @@
-﻿#ifndef CSPRITE_H
-#define CSPRITE_H
+﻿#ifndef GSPRITE_H
+#define GSPRITE_H
 
 #include <d3d9.h>
 #include <d3dx9.h>

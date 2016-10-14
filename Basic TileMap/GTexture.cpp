@@ -1,9 +1,6 @@
 #include "GTexture.h"
 
-GTexture::GTexture() {
-
-}
-void GTexture::Init(char* _fileName, int cols, int rows, int count)
+GTexture::GTexture(char* _fileName, int cols, int rows, int count)
 {
 	Cols = cols;
 	Rows = rows;
@@ -11,38 +8,39 @@ void GTexture::Init(char* _fileName, int cols, int rows, int count)
 	FileName = _fileName;
 	this->Load();
 }
-GTexture::GTexture( const GTexture &ctexture)
-{		
-	this->FileName=ctexture.FileName;
-	this->Size=ctexture.Size;
-	this->Cols=ctexture.Cols;
-	this->Rows=ctexture.Rows;
-	this->Count=ctexture.Count;
-	this->FrameHeight=ctexture.FrameHeight;
-	this->FrameWidth=ctexture.FrameWidth;
+
+GTexture::GTexture(const GTexture &GTexture)
+{
+	this->FileName = GTexture.FileName;
+	this->Size = GTexture.Size;
+	this->Cols = GTexture.Cols;
+	this->Rows = GTexture.Rows;
+	this->Count = GTexture.Count;
+	this->FrameHeight = GTexture.FrameHeight;
+	this->FrameWidth = GTexture.FrameWidth;
 	this->Load();
 }
 
 GTexture::~GTexture()
 {
-	if(this->Texture != NULL)
+	if (this->Texture != NULL)
 		this->Texture->Release();
 }
 
-void GTexture::DrawAt(int x, int y) 
+void GTexture::Draw(int x, int y)
 {
 	D3DXVECTOR3 position((float)x, (float)y, 0);
-	G_SpriteHandler->Draw( Texture, &Size, NULL, &position, 0xFFFFFFFF );
+	G_SpriteHandler->Draw(Texture, &Size, NULL, &position, 0xFFFFFFFF);
 }
 
 void GTexture::Load()
 {
-	D3DXIMAGE_INFO info; 
+	D3DXIMAGE_INFO info;
 	HRESULT result;
 
 	result = D3DXGetImageInfoFromFile(FileName, &info);
 
-	RECT s = {0, 0, info.Width, info.Height};
+	RECT s = { 0, 0, info.Width, info.Height };
 	this->Size = s;
 
 	FrameWidth = info.Width / Cols;
@@ -73,7 +71,7 @@ void GTexture::Load()
 		&Texture
 		);
 
-	if (result != D3D_OK) 
+	if (result != D3D_OK)
 	{
 		GLMessage("Can not load texture");
 		GLTrace("[texture.h] Failed to create texture from file '%s'", FileName);
